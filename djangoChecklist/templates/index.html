@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class='container'>
+        <h1>Django Checklist</h1>
+        <div>
+            <div>
+                <label for='create'>
+                    <input type='checkbox' id='create' />
+                    Create the project and cd into it (django-admin startproject myproject)</label>
+            </div>
+            <div>
+                <label for='app'>
+                    <input type='checkbox' id='app' />
+                    After going into our project, create the app (python manage.py startapp myapp)</label>
+            </div>
+            <div>
+                <label for='registerApp'>
+                    <input type='checkbox' id='registerApp' />
+                    Go to myproject/settings.py and add appname to the list of INSTALLED_APPS </label>
+            </div>
+            <div>
+                <label for='timeZone'>
+                    <input type='checkbox' id='timeZone' />
+                    In myproject/settings.py, scroll down to the bottom and change the time zone from UTC to the most
+                    applicable one (America/Los_Angeles for folks on the west coast). </label>
+            </div>
+            <div>
+                <label for='createUrl'>
+                    <input type='checkbox' id='createUrl' />
+                    Create a file called urls.py in your appname folder (you will have one in your myapp folder, and
+                    another one in your project folder. </label>
+            </div>
+            <div>
+                <label for='projUrl'>
+                    <input type='checkbox' id='projUrl' />
+                    Go to myproject/urls.py (the one we didn't have to create) and add a route to your app views. We
+                    don't need to do much here for the entirety of the project. </label>
+            </div>
+            <div>
+                <label for='templateFolder'>
+                    <input type='checkbox' id='templateFolder' />
+                    In your myapp folder, create another folder called templates (must be that exact word). Inside
+                    templates, create another folder called appname. Inside that new appname folder, create an
+                    index.html file, and add the standard html tamplate using !</label>
+            </div>
+            <div>
+                <label for='view'>
+                    <input type='checkbox' id='view' />
+                    Under views.py, create a view to start with. You'll spend a lot of time working here when you're
+                    making your actual project</label>
+            </div>
+            <div>
+                <label for='addRoute'>
+                    <input type='checkbox' id='addRoute' />
+                    Go to your appname/urls.py and create a route to the view we just made. You'll also spend a lot of
+                    time
+                    here as the routes we create here work in tandem with the views we'll create.</label>
+            </div>
+            <div>
+                <label for='models'>
+                    <input type='checkbox' id='models' />
+                    Under myapp/models.py, perform these actions in this order:
+                    <ol>
+                        <li>Create the model</li>
+                        <li>run python manage.py makemigrations in the terminal</li>
+                        <li>run python manage.py migrate in the terminal</li>
+                    </ol>
+                </label>
+            </div>
+            <div>
+                <label for='superuser'>
+                    <input type='checkbox' id='superuser' />
+                    Create a superuser by running python manage.py createsuperuser</label>
+            </div>
+            <div>
+                <label for='renderTemplate'>
+                    <input type='checkbox' id='renderTemplate' />
+                    Go to myapp/templates/myapp/html and render some text from your view so we can make sure everything works.</label>
+            </div>
+            <div>
+                <label for='startServer'>
+                    <input type='checkbox' id='startServer' />
+                    Run the server using python manage.py runserver</label>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
