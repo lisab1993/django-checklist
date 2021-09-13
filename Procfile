@@ -1,1 +1,1 @@
-web: gunicorn djangochecklist-app.wsgi --log-file
+web: gunicorn djangochecklist-app.wsgi
