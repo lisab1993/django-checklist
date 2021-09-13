@@ -1,1 +1,1 @@
-web: gunicorn djangochecklist-app.wsgi
+web: gunicorn wsgi:djangochecklist-app
