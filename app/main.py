@@ -4,4 +4,4 @@ app = Flask(__name__)
 
 @app.route("/")
 def home_view():
-		return render_template('index.html')
+		return '<h1>I want to Deploy Flask to Heroku</h1>'
